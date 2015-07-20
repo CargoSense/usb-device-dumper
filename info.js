@@ -36,7 +36,7 @@ function populateInfo(dev, cb) {
   try {
     dev.open();
   } catch(_) {
-    debug("Could not open device");
+    console.log("Could not open device");
     cb(null, clean(dev));
     return;
   }
